@@ -1,0 +1,20 @@
+REGRAS DO FIRESTORE PARA OS SCRAPS FUNCIONAREM
+
+No Firebase, entre em Firestore Database > Regras.
+Apague o conteúdo e cole isto:
+
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    match /scraps/{scrapId} {
+      allow read: if true;
+      allow create: if request.resource.data.nome is string
+        && request.resource.data.mensagem is string
+        && request.resource.data.nome.size() <= 40
+        && request.resource.data.mensagem.size() <= 500;
+      allow update, delete: if false;
+    }
+  }
+}
+
+Depois clique em PUBLICAR.

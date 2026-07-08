@@ -1,0 +1,15 @@
+{
+  "name": "Niver da Maju",
+  "short_name": "Maju",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#ead8ff",
+  "theme_color": "#b34ee9",
+  "icons": [
+    {
+      "src": "favicon.svg",
+      "sizes": "64x64",
+      "type": "image/svg+xml"
+    }
+  ]
+}
