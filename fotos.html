@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fotos | Niver da Maju</title>
+  <style>
+    body { margin: 0; font-family: Arial, sans-serif; background: #d9e6f7; color: #26384f; }
+    header { background: #5b7fc7; color: white; padding: 16px; text-align: center; border-bottom: 4px solid #ff4fa3; }
+    a { color: #315a9d; font-weight: bold; }
+    .wrap { max-width: 1000px; margin: 20px auto; padding: 12px; }
+    .box { background: white; border: 2px solid #9bb9df; border-radius: 16px; padding: 18px; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 14px; margin-top: 18px; }
+    .photo {
+      min-height: 180px;
+      border-radius: 16px;
+      background: linear-gradient(135deg, #ff4fa3, #ffe660, #5b7fc7);
+      display: grid;
+      place-items: center;
+      color: white;
+      text-shadow: 2px 2px #333;
+      font-size: 22px;
+      font-weight: bold;
+      text-align: center;
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Fotos do Niver da Maju</h1>
+    <p><a href="index.html">⬅ Voltar para a página principal</a></p>
+  </header>
+
+  <main class="wrap">
+    <section class="box">
+      <h2>Galeria</h2>
+      <p>Substitua os espaços abaixo pelas fotos da festa.</p>
+
+      <div class="grid">
+        <div class="photo">Foto 1</div>
+        <div class="photo">Foto 2</div>
+        <div class="photo">Foto 3</div>
+        <div class="photo">Foto 4</div>
+        <div class="photo">Foto 5</div>
+        <div class="photo">Foto 6</div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
